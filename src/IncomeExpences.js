@@ -9,7 +9,7 @@ export const IncomeExpences= ()=>{
             </div>
             <div>
                 <h4>Expence</h4>
-                <p id="money-minus" class="moneyminus">-$0.00 </p>
+                <p id="money-minus" class="money minus">-$0.00 </p>
         </div>
     );
 }
