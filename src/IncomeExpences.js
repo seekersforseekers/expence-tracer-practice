@@ -1,15 +1,16 @@
 import React from 'react'
 
-export const IncomeExpences= ()=>{
+export const IncomeExpences = () => {
     return(
-
-        <div>
+        <div class="inc-exp-container">
+            <div>
             <h4>Income</h4>
-            <p id="money-plus" class="money plus">+$0.00</p>
+            <p className="money plus">+$0.00</p>
             </div>
             <div>
                 <h4>Expence</h4>
-                <p id="money-minus" class="money minus">-$0.00 </p>
-        </div>
+                <p  className="money sminus">-$0.00 </p>
+            </div>
+            </div>
     );
 }
