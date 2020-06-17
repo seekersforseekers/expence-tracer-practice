@@ -37,4 +37,4 @@ jobs:
       run: npm i -g surge
       
     - name: Upload site
-      run: surge ./build project1expencetrackerapp.surge.sh/ --token ${{secrets.surge-token-project1}}
+      run: surge ./build project1expencetrackerapp.surge.sh/ --token ${{secrets.new_token_for_expence_tracker_app}}
