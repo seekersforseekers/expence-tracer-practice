@@ -10,7 +10,7 @@ import {GlobalProvider} from './Context/GlobalState';
 function App() {
   return (
     <GlobalProvider>
-    <div>
+    
     <Header/>
     <div className="container">
     <Balance/>
@@ -19,7 +19,7 @@ function App() {
     <AddTransaction/>
     </div>
    
-    </div>
+   
     </GlobalProvider>
   );
 }
