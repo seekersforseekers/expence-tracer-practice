@@ -1,15 +1,15 @@
 import React, { createContext, useReducer } from 'react'
 
-import AppReducer from './AppReducer'
+import AppReducer from './AppReducer' 
 
-const initialState ={
+const initialState ={ // it is destructring means it will retrieve objects value in this case it will get array value
     transactions:[]
 }
 //create context
 export const GlobalContext=createContext(initialState);
 //provider component 
 export const GlobalProvider = ({children}) => { 
-    const[state,dispatch]=useReducer(AppReducer,initialState);//dispatch will hel to call action
+    const[state,dispatch]=useReducer(AppReducer,initialState);//dispatch will help to call action
 
   function deleteTransaction(id){
       dispatch({
