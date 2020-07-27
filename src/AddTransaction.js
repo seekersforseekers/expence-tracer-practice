@@ -7,8 +7,10 @@ export const AddTransaction = () =>{
 
     const {addTransaction}=useContext(GlobalContext);
     const onSubmit= e=>{
+        e.target.text='';
+        e.target.amount="0";
         e.preventDefault();
-      
+       
         
        const newTransaction ={
         
@@ -29,16 +31,16 @@ addTransaction(newTransaction);
     <form onSubmit={onSubmit} >
      <div className="form-control">
             <label htmlFor="text">Text</label>
-            <input type="text"  value={text}  onChange={(e)=>setText(e.target.value)}  placeholder="Enter Text..." required/>
+            <input type="text"  value={text} id="in1" onChange={(e)=>setText(e.target.value)}  placeholder="Enter Text..." required/>
         </div>
 <div className="form-control">
     <label htmlFor="amount">  enter Nagative value as expences and enter positive value  for Amount
     </label>
-<input type="number" id="input1" VALUE={amount}  onChange={(e)=>setAmount(e.target.value)}  placeholder="Enter amount.." required />
+<input type="number" id="input1" VALUE={amount} id="in2" onChange={(e)=>setAmount(e.target.value)}  placeholder="Enter amount.." required />
 
 </div>
 
-<button type="submit"  className="btn" >Add Transaction</button>
+<button type="submit"   className="btn" >Add Transaction</button>
     </form>
  
 </>
